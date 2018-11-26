@@ -1,28 +1,22 @@
-{% set name = "paste" %}
-{% set version = "2.0.3" %}
-{% set build = 1 %}
+{% set version = "3.0.4" %}
 
 package:
-  name: {{ name }}
+  name: paste
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://bitbucket.org/ianb/paste/get/{{ version }}.tar.gz
-  sha256: d6b1ac1223c42d0a8de5e5fa46b142bff688d4f535738a0ba938d9b0a78533dd
+  url: https://pypi.io/packages/source/P/Paste/Paste-{{ version }}.tar.gz
+  sha256: 16500e43f710e93d94a540ee5f0f7743dee1791bdfc1e65d05703a2f13378207
 
 build:
-  noarch: python
-  number: {{ build }}
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
-    - pip
     - python
-    - setuptools
-    - six >=1.4.0
-
+    - pip
+    - pytest-runner
   run:
     - python
     - setuptools

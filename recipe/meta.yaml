@@ -1,4 +1,4 @@
-{% set version = "3.2.1" %}
+{% set version = "3.2.2" %}
 
 package:
   name: paste
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/P/Paste/Paste-{{ version }}.tar.gz
-  sha256: 3d9c9e96a8408777b01976dfce900049e9e8c970e02198534f2c8c1b2cca5dee
+  sha256: 0b1f4d86f8366f0d4093e5449813792c98e760edc6b7c918f0f29f9ef22ae996
 
 build:
   number: 0
@@ -37,6 +37,7 @@ test:
 about:
   home: http://pythonpaste.org
   license: MIT
+  license_file: license.txt
   summary: 'Tools for using a Web Server Gateway Interface stack'
 
 extra:

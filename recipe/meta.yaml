@@ -37,6 +37,7 @@ test:
 about:
   home: http://pythonpaste.org
   license: MIT
+  license_file: license.txt
   summary: 'Tools for using a Web Server Gateway Interface stack'
 
 extra:

@@ -1,4 +1,4 @@
-{% set version = "3.2.2" %}
+{% set version = "3.2.3" %}
 
 package:
   name: paste
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/P/Paste/Paste-{{ version }}.tar.gz
-  sha256: 0b1f4d86f8366f0d4093e5449813792c98e760edc6b7c918f0f29f9ef22ae996
+  sha256: 8bdc7f6be907eed7cd63868c79d88af2b87d02d840fb5acfc93d4bda572b1567
 
 build:
   number: 0

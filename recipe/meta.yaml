@@ -16,7 +16,6 @@ requirements:
   host:
     - python
     - pip
-    - pytest-runner
   run:
     - python
     - setuptools

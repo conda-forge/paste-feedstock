@@ -1,4 +1,4 @@
-{% set version = "3.4.0" %}
+{% set version = "3.4.1" %}
 
 package:
   name: paste
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/P/Paste/Paste-{{ version }}.tar.gz
-  sha256: 0330d22d1a5cc7202109151322d681f06e14552d43cb99957a21320f3764519b
+  sha256: 379c50d0a8016cc15b15d7f43445d8b9ac4b662943a0f6dcb8b08095deb158b3
 
 build:
-  number: 1
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -37,7 +37,7 @@ about:
   home: http://pythonpaste.org
   license: MIT
   license_file: license.txt
-  summary: 'Tools for using a Web Server Gateway Interface stack'
+  summary: Tools for using a Web Server Gateway Interface stack
 
 extra:
   recipe-maintainers:

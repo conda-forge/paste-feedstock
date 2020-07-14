@@ -5,7 +5,7 @@ Home: http://pythonpaste.org
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Tools for using a Web Server Gateway Interface stack
 

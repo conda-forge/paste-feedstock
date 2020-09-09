@@ -10,7 +10,8 @@ source:
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -30,14 +31,16 @@ test:
     - paste.evalexception
     - paste.exceptions
     - paste.util
+  commands:
+    - pip check
   requires:
-    - nose >=0.11
+    - pip
 
 about:
-  home: http://pythonpaste.org
-  license: MIT
-  license_file: license.txt
+  home: https://pythonpaste.readthedocs.io/
   summary: Tools for using a Web Server Gateway Interface stack
+  license: MIT
+  license_file: docs/license.txt
 
 extra:
   recipe-maintainers:

@@ -1,11 +1,11 @@
-About paste
-===========
+About paste-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/paste-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pythonpaste.readthedocs.io/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/paste-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tools for using a Web Server Gateway Interface stack
 
